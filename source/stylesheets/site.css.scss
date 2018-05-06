@@ -34,16 +34,12 @@ a:hover {
   color: #0FA0CE;
 }
 // header section
-head {
+header {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100vh;
   background: #e55d87;
-  background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-  background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
-  background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
 }
 
 .title {
@@ -101,6 +97,68 @@ head {
   top: -100px;
   padding-bottom: 6px;
 }
+@media only screen and (max-width: 766px) {
+.main_nav {
+  padding-top: 25px;
+}
+}
+.open-nav {
+  max-height: 400px !important;
+}
+.sticky {
+  background-color: #ffffff;
+  opacity: 1;
+  top: 0px;
+}
+nav {
+  width: 100%;
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 766px) {
+nav {
+  width: 100%;
+}
+}
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: center;
+}
+
+@media only screen and (max-width: 766px) {
+nav ul {
+  padding-top: 0px;
+  margin-bottom: 22px;
+  text-align: center;
+  width: 100%;
+}
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 35px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 766px) {
+nav ul li {
+  width: 100%;
+  padding: 7px 0;
+  margin: 0;
+}
+nav ul li:first-child {
+  margin-top: 70px;
+}
+}
+nav ul a {
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
+}
+nav ul a:hover {
+  color: #CFCFCF;
+}
 .mobile-toggle {
   display: none;
   cursor: pointer;
@@ -110,6 +168,134 @@ head {
   top: 0;
   width: 30px;
 }
+
+ // about section
+section{
+  display: block;
+  padding: 100px 0;
+}
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 300px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+// portfolio section
+#portfolio {
+  background-color: #ECF0F1; }
+  #portfolio h2 {
+    padding-bottom: 1.25em; }
+
+// Contact Section
+#contact {
+  padding: 100px 0 100px 0;
+}
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], textarea, select {
+  height: 38px;
+  padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #F5F5F5;
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  border-radius: 0;
+  outline: none;
+}
+textarea {
+  min-height: 250px;
+}
+input[type="submit"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background: #5fc3e4;
+  border-radius: 0px;
+  border: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+input[type="submit"]:hover {
+  background: #e55d87;
+  text-decoration: none;
+}
+// Footer Section
+footer {
+  min-height: 120px;
+  padding: 40px 0 40px 0;
+  background: #e55d87;
+}
+footer p {
+  color: #FFFFFF;
+  margin: 20px 0 0 0;
+}
+.socialIcons {
+  font-size: 34px;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* Lists
+********************************************************************* */
+ul {
+  list-style: circle inside;
+}
+ol {
+  list-style: decimal inside;
+}
+ol, ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+ul ul, ul ol, ol ol, ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%;
+}
+li {
+  margin-bottom: 1rem;
+}
+/* Spacing
+********************************************************************* */
+button, .button {
+  margin-bottom: 1rem;
+}
+input, textarea, select, fieldset {
+  margin-bottom: 1.5rem;
+}
+pre, blockquote, dl, figure, table, p, ul, ol, form {
+  margin-bottom: 2.5rem;
+}
+/* Utilities
+********************************************************************* */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+.u-pull-right {
+  float: right;
+}
+.u-pull-left {
+  float: left;
+}
+/* Clearing
+********************************************************************* */
+.container:after, .row:after, .u-cf {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
 
 
