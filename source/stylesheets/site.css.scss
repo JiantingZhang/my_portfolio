@@ -37,6 +37,13 @@ a:hover {
   color: #0FA0CE;
 }
 
+.callout {
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
 // header section
 header {
   display: flex;
@@ -176,7 +183,8 @@ nav ul a:hover {
  // about section
 section{
   display: block;
-  padding: 100px 0;
+  // width: 60%;
+  margin: auto;
 }
 .btn {
   font-weight: 700;
@@ -184,6 +192,16 @@ section{
   border: none;
   border-radius: 300px;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+.intro {
+  background-color: lightgrey;
+  color: black;
+  padding: 18% 24%;
+  // border-width: 10px;
+  // border-style: dashed;
+  // border-color: blue;
+  border: 5px solid pink;
+  margin: 60px;
 }
 
 // portfolio section
