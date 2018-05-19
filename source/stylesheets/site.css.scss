@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
 
+* {
+    box-sizing: border-box;
+}
 // base styles
 html {
   font-size: 62.5%;
@@ -57,7 +60,7 @@ header {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
-  padding: 2rem;
+  padding: 15rem;
   max-width: 960px;
   text-align: center;
 }
@@ -193,16 +196,17 @@ section{
   border-radius: 300px;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
-.intro {
-  background-color: lightgrey;
-  color: black;
-  padding: 18% 24%;
-  // border-width: 10px;
-  // border-style: dashed;
-  // border-color: blue;
-  border: 5px solid pink;
-  margin: 60px;
-}
+// .intro {
+//   background-color: lightgrey;
+//   color: white;
+//   padding: 18% 24%;
+//   // border-width: 10px;
+//   // border-style: dashed;
+//   // border-color: blue;
+//   border: 5px solid pink;
+//   margin: 60px;
+//   max-width: 900px;
+// }
 
 // portfolio section
 #portfolio {
@@ -250,11 +254,17 @@ input[type="submit"]:hover {
   background: #e55d87;
   text-decoration: none;
 }
+img {
+  max-width: 100%;
+  // margin-bottom: 20px;
+}
+
 // Footer Section
 footer {
   min-height: 120px;
   padding: 40px 0 40px 0;
   background: #e55d87;
+  display: flex;
 }
 footer p {
   color: #FFFFFF;
@@ -264,6 +274,7 @@ footer p {
   font-size: 34px;
   color: rgba(255, 255, 255, 0.7);
 }
+
 /* Lists
 ********************************************************************* */
 ul {
@@ -318,6 +329,10 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
   clear: both;
 }
 
+// media queries
 
+@media (max-width: 1024px) {
+
+}
 
 
