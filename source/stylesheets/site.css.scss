@@ -89,12 +89,8 @@ header {
 }
 // grid
 .container {
-  position: relative;
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 .main_nav {
   position: fixed;
@@ -114,6 +110,7 @@ header {
 @media only screen and (max-width: 766px) {
 .main_nav {
   padding-top: 25px;
+  display: inline;
 }
 }
 .open-nav {
@@ -255,7 +252,9 @@ input[type="submit"]:hover {
   text-decoration: none;
 }
 img {
-  max-width: 100%;
+  max-width: 300px;
+  float: right;
+  // border: solid 1px grey;
   // margin-bottom: 20px;
 }
 
@@ -331,8 +330,21 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 
 // media queries
 
-@media (max-width: 1024px) {
+// @media (max-width: 1024px) {
 
+// }
+
+@media (min-width: 769px) {
+  .wrap {
+    min-height: calc(100vh - 138px);
+  }
+
+  .container {
+  position: relative;
+  width: 70%;
+  max-width: 1000px;
+  margin: 0 auto;
+  }
 }
 
 

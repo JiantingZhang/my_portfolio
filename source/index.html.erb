@@ -6,86 +6,87 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
+      <link rel="stylesheet" href="normalize.css">
       <link rel="stylesheet" href="site.css.scss">
   </head>
 
   <body>
-    <header id="header">
-      <div class="main-nav">
-        <nav>
-          <ul>
-            <li><a class="smoothscroll" href="#home">Home</a></li>
-            <li><a class="smoothscroll" href="#about">About</a></li>
-            <li><a class="smoothscroll" href="#project">Project</a></li>
-            <li><a class="smoothscroll" href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="title">
-          <h1>I'm Ting</h1>
-          <h2>Welcome to my website</h2>
-        </div>
-      </div>
-    </header>
-   <!-- about section -->
-    <section class="bg-primary intro" id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-4">
-            <h1>About</h1>
-            <h3 class="heading">Brief Introduction</h2>
-            <p>Project Manager with extensive experience in digital marketing, Chinese media, and WeChat mini-programs. Launched a productivity Chrome Extension in front of 150 members of the Shanghai tech community, developed with an international team with agile methodology.</p>
-            <hr>
-            <a class="btn button-primary" href="https://uptowork.com/app/cv/f75e938a-bcb9-410c-bd27-cdc53753c2dd#preview">Resume</a>
+    <div class="wrap">
+      <header id="header">
+        <div class="main-nav">
+          <nav>
+            <ul>
+              <li><a class="smoothscroll" href="#home">Home</a></li>
+              <li><a class="smoothscroll" href="#about">About</a></li>
+              <li><a class="smoothscroll" href="#project">Project</a></li>
+              <li><a class="smoothscroll" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="title">
+            <h1>I'm Ting</h1>
+            <h2>Welcome to my website</h2>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- portfolio section -->
-    <section class="row-cover" id="project">
-      <div class="container">
-        <div class="row portfolio-projects">
-          <div class="col-xs-12 col-sm-6 col-md-4">
-             <h1>Project</h1>
-             <h3 class="portfolio-projects--title">Tabzilla</h2>
-             <p class="portfolio-projects--desc">Help users manage excessive chrome tabs.</p>
-             <p class="portfolio-projects--desc">Uses:Javacript, HTML, CSS</p>
-             <a class="btn button-primary portfolio-projects--btn" href="http://www.tabzilla.life/">View Project</a>
-          </div>
-          <div class="col-sm-6">
-            <figure>
-            <img src="images/project.jpeg" alt="project-image">
-            </figure>
-            <figcaption>
-              Project launched in 27th. May,2018.
-            </figcaption>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- contact section -->
-    <section id="contact">
-      <div class="container">
-        <h1>Contact</h1>
-        <form>
+      </header>
+     <!-- about section -->
+      <section class="bg-primary intro" id="about">
+        <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-4">
-              <label for="input">Name</label>
-              <input class="u-full-width" type="text">
-            </div>
-            <div>
-              <label for="input">Email</label>
-              <input class="u-full-width" type="email">
+              <h1>About</h1>
+              <h3 class="heading">Brief Introduction</h2>
+              <p>Project Manager with extensive experience in digital marketing, Chinese media, and WeChat mini-programs. Launched a productivity Chrome Extension in front of 150 members of the Shanghai tech community, developed with an international team with agile methodology.</p>
+              <hr>
+              <a class="btn button-primary" href="https://uptowork.com/app/cv/f75e938a-bcb9-410c-bd27-cdc53753c2dd#preview">Resume</a>
             </div>
           </div>
-          <div class="row">
-            <label for="message">Message</label>
-            <textarea class="u-full-width"></textarea>
-            <input class="button-primary" type="submit" value="Submit">
+        </div>
+      </section>
+      <!-- portfolio section -->
+      <section class="row-cover" id="project">
+        <div class="container">
+          <div class="row portfolio-projects">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+               <h1>Project</h1>
+               <h3 class="portfolio-projects--title">Tabzilla</h2>
+               <p class="portfolio-projects--desc">Help users manage excessive chrome tabs.</p>
+               <p class="portfolio-projects--desc">Uses:Javacript, HTML, CSS</p>
+               <a class="btn button-primary portfolio-projects--btn" href="http://www.tabzilla.life/">View Project</a>
+              <figure>
+              <img src="images/project.jpeg" alt="project-image">
+              </figure>
+              <figcaption>
+                Project launched in 27th. May,2018.
+              </figcaption>
+            </div>
           </div>
-        </form>
-      </div>
-    </section>
-    </main>
+        </div>
+      </section>
+      <!-- contact section -->
+      <section id="contact">
+        <div class="container">
+          <h1>Contact</h1>
+          <form>
+            <div class="row">
+              <div class="col-xs-12 col-sm-6 col-md-4">
+                <label for="input">Name</label>
+                <input class="u-full-width" type="text">
+              </div>
+              <div>
+                <label for="input">Email</label>
+                <input class="u-full-width" type="email">
+              </div>
+            </div>
+            <div class="row">
+              <label for="message">Message</label>
+              <textarea class="u-full-width"></textarea>
+              <input class="button-primary" type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+      </section>
+      </main>
+    </div>
     <!-- footer section -->
     <footer>
         <div class="social default">
@@ -94,7 +95,7 @@
               <a href="https://www.instagram.com/ting_ting_1029/"><i class="fa fa-instagram" target="_blank"></i></a>
         </div>
         <div class="footer-copyright">
-          <p>Created with love by Ting</p>
+          <span>&copy;2018 Created with love by Ting</span>
         </div>
         <div>
           <a class="callout" href="#header">Back to Top &raquo;</a>
