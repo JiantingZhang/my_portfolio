@@ -13,7 +13,7 @@ body {
   font-weight: 400;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   color: #222;
-  text-align: center;
+  // text-align: center;
   margin: 0;
 }
 // Typography
@@ -40,24 +40,21 @@ a:hover {
   color: #0FA0CE;
 }
 
-.callout {
-  border-bottom: 3px solid;
-  padding: 0 9px 3px;
-  margin-top: 20px;
-  display: inline-block;
-}
 
 // header section
 .main-header {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  // justify-content: center;
   position: fixed;
   width: 100%;
   box-shadow: 0 1px 4px rgba(0,0,0,.4);
   background-color: white;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  // padding-top: .5em;
+  // padding-bottom: .5em;
   z-index: 1000;
+  // padding: 20px 0;
+  // margin: 0 auto;
 }
 .avatar {
   border-radius: 50%;
@@ -115,7 +112,7 @@ a:hover {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
-  margin-top: 5px;
+  // margin-top: 5px;
   // top: -100px;
   // padding-bottom: 5px;
 }
@@ -136,6 +133,8 @@ a:hover {
 nav {
   width: 100%;
   margin-top: 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 766px) {
@@ -272,7 +271,8 @@ img {
 
 // Footer Section
 footer {
-  min-height: 120px;
+  // min-height: 120px;
+  height: 90px;
   padding: 40px 0 40px 0;
   background: #e55d87;
   display: flex;
@@ -281,10 +281,18 @@ footer p {
   color: #FFFFFF;
   margin: 20px 0 0 0;
 }
-.socialIcons {
-  font-size: 34px;
+.social-icon {
+  font-size: 20px;
   color: rgba(255, 255, 255, 0.7);
+  display: inline-block;
+  float: right;
 }
+// .callout {
+//   border-bottom: 3px solid;
+//   padding: 0 9px 3px;
+//   margin-top: 20px;
+//   display: inline-block;
+// }
 
 /* Lists
 ********************************************************************* */
@@ -341,12 +349,12 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
 }
 
 // media queries
+@media only screen and (min-width: 480px) {
 
-// @media (max-width: 1024px) {
+}
 
-// }
-
-@media (min-width: 769px) {
+@media only screen and (min-width: 768px),
+       only screen and (min-width: 700px) and (orientation: landscape) {
   .wrap {
     min-height: calc(100vh - 138px);
   }
@@ -359,4 +367,10 @@ pre, blockquote, dl, figure, table, p, ul, ol, form {
   }
 }
 
+// clearfix
 
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
