@@ -48,23 +48,34 @@ a:hover {
 }
 
 // header section
-header {
+.main-header {
   display: flex;
   justify-content: center;
+  position: fixed;
   width: 100%;
-  height: 100vh;
-  background: #e55d87;
+  box-shadow: 0 1px 4px rgba(0,0,0,.4);
+  background-color: white;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  z-index: 1000;
 }
-
-.title {
+.avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+.banner {
   -webkit-align-self: center;
   -ms-flex-item-align: center;
   align-self: center;
   padding: 15rem;
-  max-width: 960px;
+  width: 100%;
+  height: 100vh;
   text-align: center;
+  background: #e55d87;
 }
-.title h1 {
+.banner h1 {
   font-size: 80px;
   font-weight: 300;
   text-transform: uppercase;
@@ -74,7 +85,7 @@ header {
   padding: 0;
   color: #FFFFFF;
 }
-.title h2 {
+.banner h2 {
   color: #FFFFFF;
   font-size: 16px;
   font-weight: 400;
@@ -82,7 +93,7 @@ header {
   letter-spacing: 5px;
   margin-top: 50px;
 }
-.title p {
+.banner p {
   max-width: 600px;
   margin: 0 auto;
   line-height: 150%;
@@ -93,19 +104,20 @@ header {
   padding-right: 1em;
 }
 .main_nav {
-  position: fixed;
-  top: 0px;
-  max-height: 50px;
-  z-index: 999;
+  // position: fixed;
+  // top: 10px;
+  // max-height: 50px;
+  // z-index: 999;
   width: 100%;
-  padding-top: 17px;
+  // padding-top: 17px;
   background: none;
   overflow: hidden;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   opacity: 0;
-  top: -100px;
-  padding-bottom: 6px;
+  margin-top: 5px;
+  // top: -100px;
+  // padding-bottom: 5px;
 }
 @media only screen and (max-width: 766px) {
 .main_nav {
