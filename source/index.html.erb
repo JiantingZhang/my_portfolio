@@ -69,20 +69,22 @@
       <section id="contact">
         <div class="container">
           <h1>Contact</h1>
-          <form>
+          <form action="index.html" method="post">
             <div class="row">
               <div class="col-xs-12 col-sm-6 col-md-4">
-                <label for="input">Name</label>
-                <input class="u-full-width" type="text">
+                <label for="name">Name</label>
+                <input class="u-full-width" id="name" type="text" name="user_name">
               </div>
               <div>
-                <label for="input">Email</label>
-                <input class="u-full-width" type="email">
+                <label for="email">Email</label>
+                <input class="u-full-width" id="email" type="email" name="user_email">
               </div>
             </div>
             <div class="row">
               <label for="message">Message</label>
-              <textarea class="u-full-width"></textarea>
+              <textarea class="u-full-width" id="message" name="user_message"></textarea>
+
+             <!--  <button class="button-primary" type="submit">Submit</button> -->
               <input class="button-primary" type="submit" value="Submit">
             </div>
           </form>
@@ -98,7 +100,7 @@
           <a href="https://www.linkedin.com/in/jianting-zhang-2820b5135/" target="_blank"><i class="fa fa-linkedin"></i></a>
           <a href="https://www.instagram.com/ting_ting_1029/"><i class="fa fa-instagram" target="_blank"></i></a>
         </div>
-          <span>&copy;2018 Created with love by Ting</span>
+          <div><span>&copy;2018 Created with love by Ting</span></div>
       </div>
     </footer>
   </body>
